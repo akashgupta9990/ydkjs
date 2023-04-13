@@ -174,3 +174,6 @@ here bar knows what the value of x and can be assigned to other value.
 
   document is a global variable handled by host and is called special object/host object
   DOM and its behaviour is implemented in C/C++
+  
+# Enumerable
+  If enumerabke it will not be showun in Object.keys/loops.
