@@ -177,3 +177,15 @@ here bar knows what the value of x and can be assigned to other value.
   
 # Enumerable
   If enumerabke it will not be showun in Object.keys/loops.
+  ```js
+    var sym = Symbol("sal");
+    var person = {
+        name: "Bob",
+        [sym]: 200
+    };
+
+    const symbols = Object.getOwnPropertySymbols(person);
+    const salSym = symbols.find(sym => {
+        return sym.description && sym.description.includes("sal");
+    });
+  ```
